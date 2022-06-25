@@ -1,0 +1,22 @@
+.menu {
+    margin: 0;
+    display: flex;
+    flex: 1 100%;
+    order: 2;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    position: relative;
+    overflow: hidden;
+    background-color: #adada6;
+    width: 100%;
+    background-image: url("../layoutImg/shattered/shattered/shattered.png");
+}
+.hambNav {
+    margin: 2%;
+    display: flex;
+    flex: 0 50%;
+    order: 2;
+    cursor: pointer;
+    align-self: flex-end;
+    justify-content: flex-end;
+}

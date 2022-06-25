@@ -1,0 +1,10 @@
+header {
+    display: flex;
+    flex: 1 100%;
+    order: 1;
+    background-color: white;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    max-width: 100%;
+}

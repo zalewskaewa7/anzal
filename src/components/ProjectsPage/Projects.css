@@ -1,0 +1,29 @@
+.projects {
+    display: flex;
+    flex: 1 100%;
+    flex-flow: row wrap;
+}
+.projects h1 {
+    display: flex;
+    flex: 1 100%;
+    order: 1;
+    justify-content: center;
+}
+.galerry {
+    display: flex;
+    flex: 1 100%;
+    order: 2;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+.elementCNCimg {
+    flex: 0 20%;
+    width: 20%;
+    height: auto;
+    margin: 2%;
+}
+.bigElementCNCimg {
+    position: absolute;
+    width: 20%;
+    height: auto;
+}

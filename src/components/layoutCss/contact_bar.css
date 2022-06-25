@@ -1,0 +1,55 @@
+.contact_bar {
+    text-align: left;
+    margin: 0;
+    display: flex;
+    flex: 1 100%;
+    order: 1;
+    max-width: 100%;
+    justify-content: space-between;
+    background-image: url("../layoutImg/whitey/whitey/whitey.png");
+    padding: 5px;
+}
+
+.contact_bar ul {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.contact_bar ul li {
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0 20px;
+    padding: 5px;
+    font-weight: bold;
+}
+
+.contact_bar img {
+    margin-right: 4px;
+}
+
+.contact_bar a {
+    text-decoration: none;
+    color: black;
+    align-items: center;
+    display: flex;
+    flex-flow: row wrap;
+}
+.changeLanguage {
+    text-align: right;
+}
+.translationIcon {
+    display: none;
+}
+.glob {
+    width: 2em;
+    height: 2em;
+    opacity: 0.3;
+}
+.changeLanguage {
+    align-items: center;
+    display: flex;
+    margin: 1%;
+}

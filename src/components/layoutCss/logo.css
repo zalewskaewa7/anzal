@@ -1,0 +1,37 @@
+.logo {
+    display: flex;
+    flex: 0 40%;
+    order: 1;
+    align-self: center;
+    margin: 1% 2%;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+}
+#logo {
+    width: 50%;
+    height: 50%;
+    border-radius: 10px;
+    align-self: center;
+}
+
+@media all and (max-width: 1000px) {
+    .logo {
+        flex: 0 40%;
+        order: 1;
+        text-align: center;
+        margin: 1% 0;
+    }
+
+    #logo {
+        width: 70% !important;
+        height: 70% !important;
+    }
+}
+
+@media all and (max-width: 680px) {
+    .logo {
+        flex: 0 40%;
+        align-self: center;
+        justify-content: center;
+    }
+}

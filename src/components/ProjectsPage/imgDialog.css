@@ -1,0 +1,56 @@
+.imgDialog {
+    display: none; /* Hidden by default */
+    flex: 0 70%;
+    justify-content: space-between;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 20%;
+    overflow: auto;
+    width: 60%;
+    height: auto;
+    background-color: darkgray;
+    border-radius: 1%;
+    box-shadow: 10px 5px 5px black;
+}
+.showImg {
+    display: flex;
+    flex: 1 100%;
+
+    margin: 0;
+    width: 70%;
+    height: auto;
+    text-align: center;
+    overflow: scroll;
+    border-radius: 1%;
+}
+.btnImg,
+.btnPreviousImage,
+.btnNextImage {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1%;
+    z-index: 2; /* Sit on top */
+    font-size: 30px;
+    font-weight: 600;
+    background-color: rgba(169, 169, 169, 0.2);
+    border-radius: 20%;
+    background: transparent;
+    border-color: transparent;
+    border-style: solid;
+    color: darkgray;
+}
+.btnImg:hover,
+.btnImg:focus,
+.btnPreviousImage:hover,
+.btnNextImage:hover {
+    background-color: #776767b3;
+}
+.btnPreviousImage {
+    top: 45%;
+    left: 1%;
+}
+.btnNextImage {
+    top: 45%;
+    right: 1%;
+}

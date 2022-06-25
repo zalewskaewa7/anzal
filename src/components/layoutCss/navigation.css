@@ -1,0 +1,76 @@
+.navigation {
+    display: flex;
+    flex: 1 100%;
+    flex-wrap: nowrap;
+    align-self: center;
+
+    justify-content: space-around;
+}
+
+.focusPage {
+    border-bottom: 2px solid #adada6;
+}
+
+nav li {
+    list-style-type: none;
+    display: inline;
+    margin: 10px 10px 0px 10px;
+}
+
+nav a {
+    font-family: "Audiowide", cursive;
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+
+nav li a:link {
+    color: black;
+}
+
+nav li a:visited {
+    color: black;
+}
+
+nav li a:hover {
+    color: darkgray;
+}
+
+nav .sendMessage {
+    background-color: #e6e6db;
+    padding: 10px;
+}
+
+@media all and (max-width: 1000px) {
+    nav {
+        flex: 0 10%;
+        order: 2;
+    }
+
+    nav li {
+        display: block;
+    }
+
+    nav li:link {
+        color: black;
+    }
+
+    nav {
+        position: fixed;
+        right: -400px;
+        top: 20%;
+        flex: 1 100%;
+        font-size: 16px;
+        background-image: url("../layoutImg/whitey/whitey/whitey.png");
+        transition: right 0.5s;
+    }
+    .navRight {
+        right: 0;
+    }
+}
+
+@media all and (max-width: 680px) {
+    nav {
+        top: 15%;
+    }
+}

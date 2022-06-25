@@ -1,0 +1,106 @@
+.contentAbout {
+    display: flex;
+    flex: 1 100%;
+    justify-content: space-around;
+    flex-flow: row wrap;
+}
+.vf4 {
+    width: 50%;
+    height: auto;
+    flex: 0 50%;
+    order: 1;
+}
+.p1About {
+    flex: 0 40%;
+    order: 2;
+}
+.p2About {
+    flex: 0 90%;
+    order: 3;
+}
+.make {
+    margin: 4%;
+}
+
+.make ul li h3 {
+    margin: 0;
+    font-family: "Roboto Mono", monospace;
+    font-weight: 700;
+    text-align: left;
+}
+
+#aboutFirm {
+    font-family: "Roboto Mono", monospace;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+#aboutFirm ul li {
+    list-style-type: none;
+    text-align: center;
+    float: left;
+}
+p {
+    font-size: 20px;
+    padding: 20px;
+    text-align: left;
+}
+article {
+    flex: 1 100%;
+    order: 3;
+    margin: 1% 14%;
+    padding: 20px;
+    color: #e6e6db;
+}
+
+article {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+article > * {
+    margin: 0 6% 0% 6%;
+}
+
+article section {
+    display: flex;
+    flex: 1 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+@media all and (max-width: 1000px) {
+    article > * {
+        margin: 2%;
+    }
+    p {
+        font-size: 18px;
+    }
+
+    h3 {
+        font-size: 20px;
+        text-align: center;
+    }
+}
+@media all and (max-width: 680px) {
+    article {
+        margin: 3% 0;
+        padding: 1%;
+    }
+    .vf4 {
+        width: 80%;
+        align-self: center;
+        flex: 1 100%;
+    }
+    .p1About {
+        align-self: center;
+        flex: 1 100%;
+    }
+    .p2About {
+        align-self: center;
+        flex: 1 100%;
+    }
+    article > * {
+        margin: 0;
+    }
+}

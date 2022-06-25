@@ -1,0 +1,90 @@
+#offerH2 {
+    font-family: "Audiowide", cursive;
+}
+.descriptionOffer {
+    font-size: 25px;
+    font-family: "Roboto Mono", monospace;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.descriptionOffer h3 li {
+    list-style-type: none;
+    font-weight: 700;
+    margin: 2% 0 0 0;
+}
+
+.offering {
+    font-family: "Roboto Mono", monospace;
+    margin: 2% 0 0 4%;
+}
+
+.offering ul li {
+    list-style-type: none;
+    text-align: left;
+    margin: 4% 0 0 0%;
+}
+.offering ul li h4 {
+    font-size: 24px;
+    font-weight: 700;
+}
+.offerImages {
+    display: flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    height: 80%;
+    width: 100%;
+    flex: 1 100%;
+    justify-content: space-between;
+}
+
+.offerImages .photo {
+    flex: 0 40%;
+    align-items: center;
+    width: 46%;
+    height: auto;
+    margin: 0% 2%;
+}
+.cncmachine {
+    width: 60%;
+    height: auto;
+    margin: 2%;
+    border-radius: 10px;
+}
+h3 {
+    margin: 6% 0 0 0;
+    font-size: 26px;
+}
+
+@media all and (max-width: 680px) {
+    article {
+        margin: 3% 0;
+        padding: 1%;
+    }
+
+    .offerImages .photo {
+        width: 150px;
+        height: auto;
+        margin: 2%;
+        border-radius: 10px;
+        align-items: center;
+    }
+
+    article > * {
+        margin: 0;
+    }
+
+    .cncmachine {
+        width: 60%;
+        height: auto;
+    }
+
+    .offering ul li {
+        margin: 1% 0 0 4%;
+    }
+}

@@ -1,0 +1,99 @@
+.contact {
+    display: flex;
+    flex: 1 100%;
+    font-size: 20px;
+    padding: 10px;
+    font-family: "Roboto Mono", monospace;
+}
+.contact-center {
+    font-family: "Roboto Mono", monospace;
+    text-align: center;
+}
+.contact-center {
+    font-size: 20px;
+    text-align: left;
+    padding: 1%;
+}
+
+.adress ul li {
+    list-style-type: none;
+    padding: 1%;
+}
+
+.telephone ul li {
+    list-style-type: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-self: space-around;
+    padding: 3% 0%;
+}
+
+.telephone ul li img {
+    align-self: center;
+    margin: 0 2%;
+}
+.contact-area {
+    display: flex;
+    flex: 1 100%;
+    flex-flow: row wrap;
+    justify-content: center;
+    font-family: "Roboto Mono", monospace;
+}
+
+.contact-area > * {
+    margin: 3%;
+    padding: 2%;
+}
+
+.adress {
+    background-color: #e6e6db;
+    background-image: url("../layoutImg/whitey/whitey/whitey.png");
+    color: black;
+    flex: 0 40%;
+    order: 2;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.telephone {
+    flex: 0 40%;
+    order: 1;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    background-color: #e6e6db;
+    background-image: url("../layoutImg/whitey/whitey/whitey.png");
+    color: black;
+    flex: 0 40%;
+    order: 2;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.map {
+    flex: 1 100%;
+    order: 3;
+}
+iframe {
+    width: 100%;
+    border: 0;
+    border-radius: 20px;
+}
+
+@media all and (max-width: 680px) {
+    .telephone {
+        flex: 0 90%;
+    }
+
+    .adress {
+        flex: 0 90%;
+    }
+    article {
+        margin: 3% 0;
+        padding: 1%;
+    }
+}

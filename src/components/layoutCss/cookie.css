@@ -1,0 +1,25 @@
+.cookieWarn {
+    display: flex;
+    flex: 0 70%;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 1;
+    left: 20%;
+    bottom: 2%;
+    overflow: auto;
+    width: 60%;
+    height: auto;
+    background-color: darkgray;
+    background-image: url("../layoutImg/whitey/whitey/whitey.png");
+    border-radius: 2%;
+    box-shadow: 10px 5px 5px black;
+}
+.closeCookie {
+    padding: 1%;
+    border-radius: 10%;
+    font-size: large;
+    font-weight: 900;
+}
+.closeCookie:hover {
+    background-color: darkgray;
+}

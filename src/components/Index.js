@@ -9,9 +9,7 @@ import Projects from "./ProjectsPage/Projects";
 import Contact from "./ContactPage/Contact";
 import CookieWarn from "./layout/cookie";
 
-//import {Router, Routes, Route } from "react-router-dom";
  import { BrowserRouter as Router, Route,Routes } from 'react-router-dom';
-//import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 import Footer from "./layout/Footer";
 import "./Index.css";
@@ -23,23 +21,6 @@ const Index = () =>{
 
     const history = createBrowserHistory();
 
-   
-
-// i18n
-// .use (translate)
-// .init({
-//     interpolation: { escapeValue: false },  // React already does escaping 
-//     lng:'pl',                            // language to use
-//     resources: {
-//         en: {
-//             common: en          // 'common' is our custom namespace
-//         },
-//         de: {
-//             common: pl
-//         },
-//     },
-// });
-   
 
     return (
         <Router history={history}>
@@ -86,58 +67,5 @@ const Index = () =>{
         </Router>
     );
 }
-// const container = document.getElementById('root');
-
-// // Create a root.
-// const root = ReactDOM.createRoot(container);
-
-// // Initial render
-// root.render(<Index />);
-
-
-
-
-
-
-
-// const root = ReactDOM.createRoot(
-//     document.getElementById("root")
-//   );
-//   root.render(
-//     <React.StrictMode>
-//    <Index  />
-
-//     </React.StrictMode>
-//   );
-  
-
-
-// const rootElement = document.getElementById('root');
-// let root =root.render(rootElement);
-
-// root.render(
-//     <StrictMode>
-//       <Index  />
-//     </StrictMode>,
-//   );
-
-
-// const root = ReactDOM.createRoot(
-//     document.getElementById("root")
-// //   );
-//   root.render(<Index />);
-// const root = ReactDOM.createRoot(
-//     document.getElementById('root')
-//   );
-//   root.render(
-     
-//         <Index />
-// );
-    
-// root.render(
-//   <React.StrictMode>
-//     <Index />
-//   </React.StrictMode>
-// );
 
 export default Index;

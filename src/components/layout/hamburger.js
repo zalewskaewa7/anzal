@@ -3,7 +3,7 @@ import React from "react";
 
 function Hamburger() {
     function hamburger() {
-        var nav = document.getElementById("nav");
+        let nav = document.getElementById("nav");
         nav.classList.toggle("navRight");
     }
 

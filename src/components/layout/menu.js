@@ -25,8 +25,8 @@ let useClickOutside = (handler) => {
 
 function Menu() {
     window.onscroll = function () {
-        var menu = document.getElementById("menu");
-        var logo = document.getElementById("logo");
+        let menu = document.getElementById("menu");
+        let logo = document.getElementById("logo");
 
         if (window.pageYOffset > 100) {
             menu.style.position = "fixed";
@@ -36,16 +36,16 @@ function Menu() {
             menu.style.position = "static";
             logo.style.width = "50%";
         }
-        var screenWidth = window.innerWidth;
+        let screenWidth = window.innerWidth;
         if (screenWidth <= 1000) {
-            var highMenu = document.getElementById("menu").height;
-            var nav = document.getElementById("nav");
+            let highMenu = document.getElementById("menu").height;
+            let nav = document.getElementById("nav");
             nav.style.top = highMenu + "px";
         }
     };
 
     let hambRef = useClickOutside(() => {
-        var nav = document.getElementById("nav");
+        let nav = document.getElementById("nav");
         nav.classList.remove("navRight");
     });
     return (

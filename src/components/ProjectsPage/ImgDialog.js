@@ -4,7 +4,7 @@ const ImgDialog = (props) => {
     
 
     function closeDialog() {
-        var biggerPhoto = document.getElementById("imgDialog");
+        let biggerPhoto = document.getElementById("imgDialog");
         biggerPhoto.style.display = "none";
     }
 

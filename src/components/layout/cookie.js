@@ -8,7 +8,7 @@ function CookieWarn() {
     const { t } = useTranslation();
 
     function closeCookie() {
-        var cookie = document.getElementById("cookie-warn");
+        let cookie = document.getElementById("cookie-warn");
         cookie.style.display = "none";
     }
     return (

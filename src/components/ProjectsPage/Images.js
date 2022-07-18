@@ -1,7 +1,7 @@
 import React from 'react';
 import ImgDialog from "./ImgDialog.js";
  
-var listOfImages =[];
+let listOfImages =[];
 
 class Images extends React.Component{
     constructor(props) {
@@ -25,28 +25,28 @@ class Images extends React.Component{
 }
 
 previousImage(){
-  var currentElementList = this.state.index;
-var previousImgPath = listOfImages[currentElementList-1];
+  let currentElementList = this.state.index;
+let previousImgPath = listOfImages[currentElementList-1];
 this.zoomIn(previousImgPath, currentElementList-1);
   
       } 
     
 nextImage(){
-var currentElementList = this.state.index;
-var nextImgPath = listOfImages[currentElementList+1];
+let currentElementList = this.state.index;
+let nextImgPath = listOfImages[currentElementList+1];
 this.zoomIn(nextImgPath, currentElementList+1);
       }
 
 zoomIn(e,f){
     
-    var biggerPhoto = document.getElementById("imgDialog");
+    let biggerPhoto = document.getElementById("imgDialog");
      biggerPhoto.style.display = "flex";
      this.setState({imgPath: e})
      this.setState({index: f})
 
   
 
-     var image = document.getElementById(f);
+     let image = document.getElementById(f);
         if(image.naturalWidth < image.naturalHeight){
             
             biggerPhoto.style.width = "35%";
@@ -59,9 +59,9 @@ zoomIn(e,f){
           }
          
          
-          var hidePreviousButton = document.getElementById("btnPreviousImage");          
-          var hideBtnNextImage = document.getElementById("btnNextImage");     
-          var lastImages =  listOfImages.length-1;
+          let hidePreviousButton = document.getElementById("btnPreviousImage");          
+          let hideBtnNextImage = document.getElementById("btnNextImage");     
+          let lastImages =  listOfImages.length-1;
     if(f===0){
       hidePreviousButton.style.display="none";
     }else if(f=== lastImages){
